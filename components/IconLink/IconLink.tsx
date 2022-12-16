@@ -1,14 +1,16 @@
-import React from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import { Wrap } from './styles';
 import Link from 'next/link';
-type IconLinkProps = {
-  label: string;
+
+export type IconLinkProps = HTMLAttributes<HTMLDivElement> & {
+  children: ReactNode;
+  variant?: string;
 };
 
-const IconLink = ({ label }: IconLinkProps) => {
+const IconLink = ({ children, variant }: IconLinkProps) => {
   return (
-    <Wrap>
-      <span>{label}</span>
+    <Wrap variant={variant}>
+      <span>{children}</span>
       <div>
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 10'>
           <path

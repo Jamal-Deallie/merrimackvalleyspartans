@@ -1,5 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from 'react';
-import { Line } from '../sharedstyles';
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { useIsomorphicLayoutEffect } from '@/hooks/useIsomorphicLayout';
 import { gsap } from 'gsap';
 
@@ -12,6 +11,7 @@ import {
   Wrapper,
   Container,
   Arrow,
+  Line
 } from './styles';
 type Props = {};
 

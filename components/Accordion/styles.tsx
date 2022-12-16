@@ -61,3 +61,10 @@ export const Inner = styled.div`
     color: ${({ theme }) => theme.colors.tertiary};
   }
 `;
+
+export const Line = styled.div`
+  margin-top: 0.5vh;
+  height: 1px;
+  background-color: ${({ theme }) => theme.colors.tertiary};
+  width: 100%;
+`;

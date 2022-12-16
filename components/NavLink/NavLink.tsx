@@ -10,7 +10,7 @@ type NavLinkProps = LinkProps & {
 
 export default function NavLink({ children, href, key }: NavLinkProps) {
   return (
-    <CustomLink href={href} key={key}>
+    <CustomLink href={href}>
       {children}
     </CustomLink>
   );

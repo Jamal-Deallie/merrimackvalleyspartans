@@ -28,6 +28,7 @@ export default function Home() {
       <Mission />
       <Quote />
       <Faqs />
+      <CTA />
     </>
   );
 }

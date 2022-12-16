@@ -15,12 +15,12 @@ export const links = [
     path: 'schedule',
   },
   {
-    id: 3,
+    id: 4,
     label: 'Team',
     path: 'team',
   },
   {
-    id: 4,
+    id: 5,
     label: 'Contact',
     path: 'contact',
   },

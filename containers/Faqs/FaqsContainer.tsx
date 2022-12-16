@@ -1,12 +1,11 @@
 import React from 'react';
 import Accordion from '@/components/Accordion/Accordion';
-import { Container, Heading, Accordions, Wrapper } from './styles';
+import { Container, Heading, Accordions, Wrapper} from './styles';
 import {
   Main,
   Title,
   Description,
   CodeTag,
-  Line,
   Subheader,
 } from '../../styles/sharedstyles';
 type Props = {};

@@ -23,7 +23,7 @@ const Quote = (props: Props) => {
           <p>
             WE ARE OPTIMISTIC, EVOLVING AND ALWAYS READY TO CORRECT OURSELVES
           </p>
-          <IconLink label={'Meet Our Team'} />
+          <IconLink variant={'primary'}>Meet Our Team</IconLink>
         </Content>
       </FlexContainer>
     </Section>

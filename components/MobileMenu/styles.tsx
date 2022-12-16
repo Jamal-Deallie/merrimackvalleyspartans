@@ -67,9 +67,7 @@ export const Menu = styled.div`
   left: 0;
   right: 0;
   position: fixed;
-  @media only screen and (max-width: 768px) {
-    display: block;
-  }
+
 `;
 
 

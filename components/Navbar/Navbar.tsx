@@ -25,11 +25,9 @@ export default function Navbar() {
           <Links>
             {links.map(({ id, label, path }) => {
               return (
-                <>
-                  <NavLink href={path} key={id}>
-                    {label}
-                  </NavLink>
-                </>
+                <div key={id}>
+                  <NavLink href={path}>{label}</NavLink>
+                </div>
               );
             })}
           </Links>

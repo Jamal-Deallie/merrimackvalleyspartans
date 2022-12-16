@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  padding-top: clamp(1.13rem, calc(-1.48rem + 13.05vw), 7.81rem);
   padding-inline: clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
   gap: clamp(3.94rem, calc(3.72rem + 1.1vw), 4.5rem);
   width: 100%;
@@ -11,7 +12,7 @@ export const Container = styled.div`
 export const Heading = styled.div`
   h1 {
     margin: 0;
-    font-size: 10.87vw;
+ font-size: 10.87vw;   
     font-family: ${({ theme }) => theme.fonts.heading};
     color: ${({ theme }) => theme.colors.secondary};
     line-height: 1;
@@ -41,3 +42,4 @@ export const Wrapper = styled.div`
   height: fit-content;
   width: 100%;
 `;
+
