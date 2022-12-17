@@ -13,7 +13,7 @@ const Main = styled.main`
 const Title = styled.h1`
   margin: 0;
   font-size: 10.87vw;
-  font-family: ${({ theme }) => theme.fonts.heading};
+  font-family: '${({ theme }) => theme.fonts.heading}';
   color: ${({ theme }) => theme.colors.secondary};
   line-height: 1;
 `;

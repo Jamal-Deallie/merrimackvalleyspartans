@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root{
   --body-font:'Poppins';
-  --header-font: 'Vaulto';
+  --header-font: 'Oswald';
   --primary-color: 'rgb(253, 97, 21)';
   --secondary-color: 'rgb(29, 29, 31)';
   --tertiary-color: 'rgb(248, 249, 252)';
@@ -127,7 +127,7 @@ video {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Vaulto', sans-serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   p, span a, {

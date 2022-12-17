@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Heading = styled.div`
   h1 {
     margin: 0;
- font-size: 10.87vw;   
+    font-size: 10.87vw;
     font-family: ${({ theme }) => theme.fonts.heading};
     color: ${({ theme }) => theme.colors.secondary};
     line-height: 1;
@@ -42,4 +42,3 @@ export const Wrapper = styled.div`
   height: fit-content;
   width: 100%;
 `;
-

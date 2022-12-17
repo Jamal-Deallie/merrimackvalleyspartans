@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   overflow: hidden;
+
 `;
 
-export const Wrap = styled.div`
 
+export const Wrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@ export const Wrap = styled.div`
 `;
 
 export const Description = styled.div`
+  padding-top: clamp(1.6rem, calc(-3.73rem + 24.65vw), 10.26rem);
   padding-inline: clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
   p {
     font-family: ${({ theme }) => theme.fonts.heading};

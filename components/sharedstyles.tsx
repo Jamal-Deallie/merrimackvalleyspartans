@@ -9,14 +9,14 @@ const Main = styled.main`
   padding: 5rem 2rem;
   width: 100%;
 `;
-
 const Title = styled.h1`
   margin: 0;
   font-size: 10.87vw;
-  font-family: ${({ theme }) => theme.fonts.heading};
+  font-family: 'Oswald';
   color: ${({ theme }) => theme.colors.secondary};
   line-height: 1;
 `;
+
 
 const Line = styled.div`
   margin-top: 0.5vh;

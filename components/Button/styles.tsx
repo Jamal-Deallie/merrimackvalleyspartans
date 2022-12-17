@@ -54,6 +54,7 @@ const DISABLED = css`
 
 export const CustomButton = styled.button<ButtonProps>`
   font-size: 1.563rem;
-  ${props => props.variant && COLOR[props.variant]}
+  width: ${(props: { width: string }) => (props.width ? props.width : 'auto')};
+  ${(props: { variant: string }) => props.variant && COLOR[props.variant]}
   ${props => props.disabled && DISABLED}
 `;

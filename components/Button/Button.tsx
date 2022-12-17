@@ -10,6 +10,7 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: string | ReactNode;
   onClick?: () => void;
   icon?: ReactElement;
+  width?: string;
   variant:
     | 'primary'
     | 'secondary'
@@ -27,11 +28,12 @@ export default function Button({
   className,
   onClick,
   variant,
+  width,
   disabled = false,
   ...props
 }: ButtonProps) {
   return (
-    <CustomButton {...props} variant={variant} disabled={disabled}>
+    <CustomButton {...props} variant={variant} disabled={disabled} width={width}>
       {children}
     </CustomButton>
   );

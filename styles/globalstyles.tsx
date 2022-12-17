@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
   }
 body{ 
   background-color: rgb(29, 29, 31);

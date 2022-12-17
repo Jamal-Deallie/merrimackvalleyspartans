@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import GlobalStyle from '../components/globalstyles';
 import { Layout } from '@/components/index';
-import { Poppins } from '@next/font/google';
+import { Poppins, Oswald } from '@next/font/google';
 
 const theme: DefaultTheme = {
   colors: {
@@ -18,6 +18,10 @@ const theme: DefaultTheme = {
 
 const poppins = Poppins({
   weight: '400',
+});
+
+const oswald = Oswald({
+  weight: '700',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
