@@ -55,3 +55,25 @@ export const OuterContainer = styled.div`
   height: auto;
   overflow: hidden;
 `;
+
+export const Button = styled.div`
+  color: $ ${({ theme }) => theme.colors.tertiary};
+  position: relative;
+  z-index: 3;
+  background: ${({ theme }) => theme.colors.secondary};
+  border-color: ${({ theme }) => theme.colors.tertiary};
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  width: 15rem;
+  font-size: 1.563rem;
+  &:hover {
+    background: ${({ theme }) => theme.colors.tertiary};
+    border-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
+    transition: all 0.2s linear;
+  }
+`;

@@ -1,4 +1,3 @@
-//@ts-nocheck
 import styled, { css } from 'styled-components';
 import { ButtonProps } from './Button';
 
@@ -44,6 +43,18 @@ const COLOR = {
       border-color: white;
       transition: all 0.2s linear;
     }
+  `,
+};
+
+const WIDTH = {
+  full: css`
+    width: 100%;
+  `,
+  large: css`
+    width: 15rem;
+  `,
+  default: css`
+    width: auto;
   `,
 };
 

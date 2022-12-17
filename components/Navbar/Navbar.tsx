@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from '../Button/Button';
-import { ImageWrap, Nav, Inner, Options, Links } from './styles';
+import { ImageWrap, Nav, Inner, Options, Links, Button } from './styles';
 import { NavLink } from '@/components/index';
 import { links } from '@/src/data/data';
 import MobileMenu from '@/components/MobileMenu/MobileMenu';
@@ -32,7 +31,7 @@ export default function Navbar() {
             })}
           </Links>
           <Link href='donate'>
-            <Button variant='outline_secondary'>Donate</Button>
+            <Button>Donate</Button>
           </Link>
         </Options>
         <MobileMenu />

@@ -3,8 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import Button from '@/components/Button/Button';
-import { TextArea, Field } from './styles';
+
+import { TextArea, Field, Button } from './styles';
 
 type SigninFormProps = {
   email?: string;
@@ -75,7 +75,7 @@ const Form = () => {
           ) : null}
         </Field>
 
-        <Button type='submit' variant='primary' width={'100%'}>
+        <Button>
           {/* {isSubmitting ? <span>Submitting...</span> : <span>Submit</span>} */}
           Submit
         </Button>

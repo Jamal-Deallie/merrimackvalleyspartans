@@ -25,10 +25,12 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
+    font-size: 1.563rem;
   }
 body{ 
   background-color: rgb(29, 29, 31);
   }
+
 
 .no-scroll {
   overflow: hidden !important;

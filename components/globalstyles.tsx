@@ -23,11 +23,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   body{ 
     background-color: rgb(29, 29, 31);
   }
+
+
+
 
 button{cursor: pointer;}
 html,

@@ -14,12 +14,12 @@ import {
   VideoContainer,
   OuterContainer,
   Title,
+  Button,
 } from './styles';
 import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitText from 'gsap/dist/SplitText';
-import Button from '@/components/Button/Button';
 
 const Hero = () => {
   const component = useRef<HTMLDivElement>(null);
@@ -80,7 +80,7 @@ const Hero = () => {
               We want you to be great
             </p>
           </div>
-          <Button type='submit' variant='primary' width={'15rem'}>
+          <Button>
             {/* {isSubmitting ? <span>Submitting...</span> : <span>Submit</span>} */}
             Sign Up
           </Button>

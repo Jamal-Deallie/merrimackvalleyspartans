@@ -1,4 +1,3 @@
-  //@ts-nocheck
 import {
   ButtonHTMLAttributes,
   ReactElement,
@@ -12,7 +11,7 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   onClick?: () => void;
   icon?: ReactElement;
   width?: string;
-  variant:
+  color?:
     | 'primary'
     | 'secondary'
     | 'tertiary'
@@ -28,15 +27,13 @@ export default function Button({
   isLoading = false,
   className,
   onClick,
-  variant,
+  color,
   width,
   disabled = false,
   ...props
 }: ButtonProps) {
-
   return (
-    
-    <CustomButton {...props} variant={variant} disabled={disabled} width={width}>
+    <CustomButton {...props} color={color} disabled={disabled}>
       {children}
     </CustomButton>
   );

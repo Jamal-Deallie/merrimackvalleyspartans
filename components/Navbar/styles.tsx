@@ -13,6 +13,27 @@ export const Nav = styled.nav`
   position: relative;
 `;
 
+export const Button = styled.div`
+    color: ${({ theme }) => theme.colors.secondary};
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    border-color: ${({ theme }) => theme.colors.secondary};
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    font-size: 1.563rem;
+    &:hover {
+      color: white;
+      background: ${({ theme }) => theme.colors.secondary};
+      border-color: white;
+      transition: all 0.2s linear;
+    }
+`;
+
 export const Inner = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   display: flex;

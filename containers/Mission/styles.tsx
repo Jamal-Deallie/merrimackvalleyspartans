@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   overflow: hidden;
-
 `;
-
 
 export const Wrap = styled.div`
   width: 100%;
@@ -22,10 +20,7 @@ export const Description = styled.div`
   p {
     font-family: ${({ theme }) => theme.fonts.heading};
     font-size: 3.5vw;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.tertiary};
     text-transform: uppercase;
-    span {
-      color: ${({ theme }) => theme.colors.tertiary};
-    }
   }
 `;
