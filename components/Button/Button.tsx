@@ -1,3 +1,4 @@
+  //@ts-nocheck
 import {
   ButtonHTMLAttributes,
   ReactElement,
@@ -32,7 +33,9 @@ export default function Button({
   disabled = false,
   ...props
 }: ButtonProps) {
+
   return (
+    
     <CustomButton {...props} variant={variant} disabled={disabled} width={width}>
       {children}
     </CustomButton>
