@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from '@/containers/Calendar/Calendar';
+import Calendar from '@/containers/Calendar';
 
 type Props = {};
 

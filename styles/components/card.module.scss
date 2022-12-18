@@ -1,0 +1,26 @@
+@use '../utils/utils' as *;
+
+.card {
+  max-width: 80rem;
+  color: $tertiary-variant;
+}
+
+.line {
+  margin-top: 0.5vh;
+  height: 1px;
+  background-color: $tertiary-variant;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  svg {
+    width: 2rem;
+    fill: $secondary-variant;
+  }
+}

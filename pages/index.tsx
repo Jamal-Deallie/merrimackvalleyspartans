@@ -1,20 +1,11 @@
 import Head from 'next/head';
-import {
-  Container,
-  Main,
-  Title,
-  Description,
-  CodeTag,
-  Line,
-  Subheader,
-} from '../components/sharedstyles';
 import { Suspense } from 'react';
-import Video from '@/components/Video/Video';
-import Hero from '@/containers/Hero/HeroContainer';
-import Mission from '@/containers/Mission/MissionContainer';
-import Quote from '@/containers/Quote/QuoteContainer';
-import Faqs from '@/containers/Faqs/FaqsContainer';
-import CTA from '@/containers/CTA/CTAContainer';
+import Video from '@/components/Video';
+import Hero from '@/containers/HeroContainer';
+import Mission from '@/containers/MissionContainer';
+import Quote from '@/containers/QuoteContainer';
+import Faqs from '@/containers/FaqsContainer';
+import CTA from '@/containers/CTAContainer';
 
 export default function Home() {
   return (

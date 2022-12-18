@@ -1,0 +1,52 @@
+@use '../utils/utils' as *;
+
+.container {
+  // padding: $spacing-xxl clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
+  // padding-top: clamp(1.13rem, calc(-1.48rem + 13.05vw), 7.81rem);
+  // gap: clamp(3.94rem, calc(3.72rem + 1.1vw), 4.5rem);
+  // width: 100%;
+  // position: relative;
+  // height: auto;
+  @include pad-block-tb-md;
+  @include pad-inline-xl;
+}
+
+.heading {
+  h1 {
+    margin: 0;
+    font-size: 10.87vw;
+    font-family: $heading-font;
+    color: $primary-variant;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $tertiary-variant;
+    font-family: $body-font;
+    font-size: 1.563rem;
+  }
+}
+
+.accordion {
+  max-width: 50%;
+  margin-left: auto;
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wrap {
+  @include block-wrap;
+}
+
+.flex {
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    gap: clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
+  }
+}

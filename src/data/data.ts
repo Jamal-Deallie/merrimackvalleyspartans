@@ -16,8 +16,8 @@ export const links = [
   },
   {
     id: 4,
-    label: 'Team',
-    path: 'team',
+    label: 'Staff',
+    path: 'Staff',
   },
   {
     id: 5,

@@ -1,0 +1,79 @@
+@use '../utils/utils' as *;
+
+.container {
+  @include pad-block-tb-md;
+  @include pad-inline-xl;
+  width: 100%;
+
+  .wrap {
+    @include block-wrap;
+
+    h1 {
+      @include title;
+      color: $primary-variant;
+      @include devices(tablet) {
+        text-align: center;
+      }
+    }
+
+    h1:first-child {
+      margin-bottom: $space-m;
+    }
+  }
+}
+
+.logos {
+  position: relative;
+  min-height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  margin-top: $space-2xl-3xl;
+  align-items: center;
+  margin-inline: auto;
+  width: fit-content;
+  @include devices(tablet) {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 30rem;
+    height: 15rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $primary-variant;
+    }
+  }
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1.35rem;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+
+    // .line {
+    //   width: 100%;
+    //   height: 5px;
+    //   transform-origin: left;
+    //   overflow: hidden;
+    //   background-color: $primary-variant;
+    //   @include devices(tablet) {
+    //     display: none;
+    //   }
+    // }
+  }
+}

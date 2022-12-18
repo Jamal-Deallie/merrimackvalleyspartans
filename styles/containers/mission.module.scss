@@ -1,0 +1,31 @@
+@use '../utils/utils' as *;
+
+.container {
+  @include pad-inline-xl;
+  @include pad-block-tb-md;
+  position: relative;
+}
+
+.wrap {
+  @include inner-container;
+}
+
+.description {
+  p {
+    @include description;
+  }
+}
+
+.mission {
+  position: relative;
+  p {
+    font-family: $heading-font;
+    font-family: $heading-font;
+    font-size: clamp(3.052rem, 3vw + 2rem, 9.583rem);
+    color: $tertiary-variant;
+    text-transform: uppercase;
+    span {
+      @include outline-font($primary-variant);
+    }
+  }
+}

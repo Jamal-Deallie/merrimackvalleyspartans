@@ -1,0 +1,90 @@
+@use '../utils/utils' as *;
+
+.container {
+  margin-top: clamp(2rem, calc(1.9rem + 0.49vw), 2.25rem);
+
+  .primary {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    gap: 1rem;
+    span {
+      font-size: 1.563rem;
+      color: $primary-variant;
+    }
+    div {
+      fill: $primary-variant;
+      width: 1.5rem;
+      height: 1rem;
+    }
+
+    &:hover {
+      div {
+        fill: $tertiary-variant;
+        margin-left: 0.25rem;
+      }
+      span {
+        color: $tertiary-variant;
+      }
+    }
+  }
+
+  .tertiary {
+    display: flex;
+    width: 30rem;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    gap: 1rem;
+
+    span {
+      font-size: 1.563rem;
+      color: $tertiary-variant;
+    }
+    .icon {
+      fill: $tertiary-variant;
+      width: 1.5rem;
+      height: 1rem;
+    }
+
+    &:hover {
+      .icon {
+        fill: $secondary-variant;
+        margin-left: 0.25rem;
+      }
+      span {
+        color: $secondary-variant;
+      }
+    }
+  }
+
+  .secondary {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    gap: 1rem;
+    span {
+      font-size: 1.563rem;
+      color: $secondary-variant;
+    }
+    div {
+      fill: $secondary-variant;
+      width: 1.5rem;
+      height: 1rem;
+    }
+
+    &:hover {
+      div {
+        fill: $primary-variant;
+        margin-left: 0.25rem;
+      }
+      span {
+        color: $primary-variant;
+      }
+    }
+  }
+}

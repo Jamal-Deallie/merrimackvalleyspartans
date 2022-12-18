@@ -1,0 +1,52 @@
+@use '../utils/utils' as *;
+
+.container {
+  @include pad-block-tb-md;
+  @include pad-inline-xl;
+  width: 100%;
+  background-color: $primary-variant;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.5rem);
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.quote {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+
+  .icon {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: auto;
+    aspect-ratio: 25.17 / 19.07;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    p {
+      margin-top: 2rem;
+      font-size: clamp(1.5rem, 4.75vw + 0.15rem, 4.75rem);
+      font-family: $heading-font;
+    }
+  }
+}
+
+.wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

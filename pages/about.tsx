@@ -1,22 +1,14 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import {
-  Container,
-  Main,
-  Title,
-  Description,
-} from '../components/sharedstyles';
+import AboutUs from '@/containers/AboutContainer';
+import Sponsors from '@/containers/SponsorsContainer';
 
 const About: NextPage = () => {
   return (
-    <Container>
-      <Main>
-        <Title>About Page</Title>
-        <Description>
-          <Link href='/'>&larr; Go Back</Link>
-        </Description>
-      </Main>
-    </Container>
+    <>
+      <AboutUs />
+      <Sponsors />
+    </>
   );
 };
 

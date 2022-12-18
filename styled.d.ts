@@ -11,5 +11,8 @@ declare module 'styled-components' {
       body?: string;
       heading?: string;
     };
+    spacing?: {
+      xxl?: string
+    }
   }
 }
