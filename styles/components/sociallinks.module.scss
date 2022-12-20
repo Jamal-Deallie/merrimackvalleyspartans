@@ -19,12 +19,12 @@
         stroke: $tertiary-variant;
       }
     }
-    .secondary{
+    .secondary {
       fill: $secondary-variant;
 
       &:hover {
-        fill: $tertiary-variant;
-        stroke: $tertiary-variant;
+        fill: $primary-variant;
+        stroke: $primary-variant;
       }
     }
   }

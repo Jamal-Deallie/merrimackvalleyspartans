@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { useIsomorphicLayoutEffect } from '@/hooks/useIsomorphicLayout';
+import useLockedBody from '@/src/hooks/useLockedBody';
 import { gsap } from 'gsap';
 import Link from 'next/link';
 import SocialLinks from '@/components/SocialLinks';
@@ -7,6 +8,12 @@ import styles from '@/styles/components/mobilemenu.module.scss';
 
 const MobileMenu = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [locked, setLocked] = useLockedBody(false, 'root');
+
+  const toggleLocked = () => {
+    setLocked(locked);
+  };
+
   const bottom = useRef<HTMLDivElement>(null);
   const top = useRef<HTMLUListElement>(null);
   const tl = useRef(null);
@@ -23,7 +30,7 @@ const MobileMenu = () => {
     let links = gsap.utils.toArray('#link');
     let ctx = gsap.context(() => {
       tl.current
-        .to(document.body, { overflow: 'hidden', ease: 'power3.inOut' })
+        .call(toggleLocked)
         .to('#cont', {
           duration: 0.1,
           css: { display: 'block' },
@@ -105,14 +112,14 @@ const MobileMenu = () => {
 
   return (
     <>
-      {/* <button className={styles.button} id='btn' onClick={openShopMenu}>
+      <button className={styles.button} id='btn' onClick={openShopMenu}>
         <div id='label'>
           <span id='menuBtn'>
             <div id='menuBtnDiv'>MENU</div>
             <div id='menuBtnDiv2'>CLOSE</div>
           </span>
         </div>
-      </button> */}
+      </button>
 
       <div className={styles.menu} id='cont'>
         <div className={styles.links}>
@@ -145,7 +152,7 @@ const MobileMenu = () => {
                 <p>Methuen, Massachusetts, United States</p>
                 <p>MVSpartansFootball@gmail.com</p>
               </div>
-              <SocialLinks />
+              <SocialLinks size={'50px'} variant={'secondary'}/>
             </div>
           </div>
         </div>

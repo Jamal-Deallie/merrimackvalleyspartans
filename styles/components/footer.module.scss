@@ -1,6 +1,6 @@
 @use '../utils/utils' as *;
 
-.footer{
+.footer {
   padding: 0 0 20px;
   line-height: 24px;
   color: white;
@@ -18,6 +18,8 @@
   font-size: 1.241rem;
   justify-content: space-between;
   padding-inline: clamp(3.94rem, calc(3.13rem + 4.02vw), 6rem);
+  flex-wrap: wrap;
+  gap: $space-m;
 }
 
 .top {
@@ -26,15 +28,19 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: $space-m;
 }
 
 .desc {
   max-width: 30%;
+  min-width: 30rem;
   h6 {
     color: $primary-variant;
     font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);

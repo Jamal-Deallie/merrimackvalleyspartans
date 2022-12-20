@@ -19,7 +19,7 @@ const Sponsors = () => {
           <div className={styles.flex} id='batch-wrap'>
             {Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]).map(index => {
               return (
-                <div className={styles.image} id='logo'>
+                <div className={styles.image} id='logo' key={index}>
                   <p>Logo Here</p>
                 </div>
               );

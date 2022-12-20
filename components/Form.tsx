@@ -49,27 +49,27 @@ const Form = () => {
   });
 
   return (
-    <div>
+    <div className={styles.container}>
       {isSubmitSuccessful ? <p>Registration Success</p> : null}
       <form onSubmit={onSubmit}>
         <div className={styles.field}>
-          <label> Email</label>
-          <input type='email' {...register('email')} />
+  
+          <input type='email' {...register('email')} placeholder='Email'/>
           {errors.email ? (
             <p style={{ color: 'red' }}>{errors.email?.message}</p>
           ) : null}
         </div>
         <div className={styles.field}>
-          <label> Name</label>
-          <input type='name' {...register('name')} />
+
+          <input type='name' {...register('name')} placeholder='Name'/>
           {errors.name ? (
             <p style={{ color: 'red' }}>{errors.name?.message}</p>
           ) : null}
         </div>
 
         <div className={styles.field}>
-          <label>Message</label>
-          <textarea name='message' required />
+
+          <textarea name='message' placeholder='Message' required />
           {errors.name ? (
             <p style={{ color: 'red' }}>{errors.name?.message}</p>
           ) : null}

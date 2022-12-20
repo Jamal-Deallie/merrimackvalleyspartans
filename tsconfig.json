@@ -29,6 +29,6 @@
       "@/typings/*": ["types/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Carousel.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Carousel.tsx", "src/helpers/horizontalLoop.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,8 @@
-import { ReactNode } from 'react';
+import { PropsWithChildren, useState, useEffect, ReactNode } from 'react';
 import Link, { LinkProps } from 'next/link';
-import styles from '@/styles/components/navlink.module.scss'
+import { useRouter } from 'next/router';
+import cn from 'classnames';
+import styles from '@/styles/components/navLink.module.scss';
 
 type NavLinkProps = LinkProps & {
   children: ReactNode;
@@ -8,9 +10,30 @@ type NavLinkProps = LinkProps & {
   key?: string | number;
 };
 
-export default function NavLink({ children, href, key }: NavLinkProps) {
+export default function NavLink({ children, ...props }: NavLinkProps) {
+  const { asPath, isReady } = useRouter();
+  const [active, setActive] = useState<boolean>(false);
+  useEffect(() => {
+    // Check if the router fields are updated client-side
+    if (isReady) {
+      // Dynamic route will be matched via props.as
+      // Static route will be matched via props.href
+      const linkPathname = new URL(
+        (props.as || props.href) as string,
+        location.href
+      ).pathname;
+
+      // Using URL().pathname to get rid of query and hash
+      const activePathname = new URL(asPath, location.href).pathname;
+
+      linkPathname === activePathname ? setActive(true) : setActive(false);
+    }
+  }, [asPath, isReady, props.as, props.href]);
+
   return (
-    <Link href={href} className={styles.link}>
+    <Link
+      {...props}
+      className={cn([styles.link], active ? [styles.active] : null)}>
       {children}
     </Link>
   );

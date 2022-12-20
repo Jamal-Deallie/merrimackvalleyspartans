@@ -6,6 +6,7 @@ import Mission from '@/containers/MissionContainer';
 import Quote from '@/containers/QuoteContainer';
 import Faqs from '@/containers/FaqsContainer';
 import CTA from '@/containers/CTAContainer';
+import Carousel from '@/components/Carousel';
 
 export default function Home() {
   return (
@@ -17,9 +18,12 @@ export default function Home() {
       </Head>
       <Hero />
       <Mission />
+      <Carousel />
       <Quote />
-      <Faqs />
-      <CTA />
+      <div className='gradient'>
+        <Faqs />
+        <CTA />
+      </div>
     </>
   );
 }

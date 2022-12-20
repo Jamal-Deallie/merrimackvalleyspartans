@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <SocialLinks />
+          <SocialLinks size={'32px'}/>
         </div>
       </div>
     </footer>

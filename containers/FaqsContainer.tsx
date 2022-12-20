@@ -1,6 +1,7 @@
 import React from 'react';
 import Accordion from '@/components/Accordion';
 import styles from '@/styles/containers/faqs.module.scss';
+import CustomImage from '@/components/CustomImage';
 
 type Props = {};
 
@@ -9,12 +10,23 @@ const Faqs = ({}: Props) => {
     <section className={styles.container}>
       <div className={styles.wrap}>
         <div className={styles.flex}>
-          <div className={styles.heading}>
-            <h1>Faqs</h1>
-            <p>Frequently Asked Questions</p>
-            <p>Here are some common questions about the Spartans</p>
+          <div>
+            <div>
+              <div className={styles.heading}>
+                <h1>If you got questions</h1>
+                <h1>We you got answers</h1>
+                <p>Here are some common questions about the Spartans</p>
+              </div>
+            </div>
           </div>
+
           <div className={styles.accordion}>
+            <div className={styles.wrapper}>
+              <Accordion />
+            </div>
+            <div className={styles.wrapper}>
+              <Accordion />
+            </div>
             <div className={styles.wrapper}>
               <Accordion />
             </div>

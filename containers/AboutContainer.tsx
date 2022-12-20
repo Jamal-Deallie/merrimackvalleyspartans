@@ -18,22 +18,22 @@ const AboutUs = ({}: Props) => {
             </div>
             <div className={styles.copy}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                The Merrimack Valley Spartans are dedicated to providing a
+                positive football and cheer experience by supporting each
+                athlete to reach their fullest potential both on and off the
+                field. We want to promote the value of family that combines
+                safety, connection, acceptance, understanding, love, and a
+                strong sense of community.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                We will focus our instruction on the building of fundamentals
+                and all areas of skill development in addition to teaching the
+                principles of good character, sportsmanship, leadership,
+                discipline, self-esteem, and team comradery. As we help instill
+                the core values of honesty, fairness, respect, trust, and
+                self-confidence in every child, we can provide the youth of our
+                community with a sports program that can be used to achieve both
+                academic and personal success.
               </p>
             </div>
           </div>

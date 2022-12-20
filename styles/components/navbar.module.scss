@@ -16,6 +16,12 @@
   padding-inline: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
   z-index: 9;
   background-color: $secondary-variant;
+  background-image: radial-gradient(
+    circle farthest-corner at 24.1% 68.8%,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(0, 0, 0, 1) 99.4%
+  );
+  border-bottom: 1px solid $tertiary-variant;
 }
 
 .options {

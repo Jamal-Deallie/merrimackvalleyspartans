@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <div className={styles.container}>
       <Navbar />
       <main className={styles.main}>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
