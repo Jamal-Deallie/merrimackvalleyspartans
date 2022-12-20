@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/components/iconlink.module.scss';
+import styles from '@/styles/components/IconLink.module.scss';
 
 type Props = {};
 const MatchUpCard = ({}: Props) => {

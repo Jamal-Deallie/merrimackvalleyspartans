@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import { Suspense } from 'react';
-import Video from '@/components/Video';
 import Hero from '@/containers/HeroContainer';
 import Mission from '@/containers/MissionContainer';
 import Quote from '@/containers/QuoteContainer';

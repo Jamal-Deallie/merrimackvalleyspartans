@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactNode } from 'react';
 import { useCallback } from 'react';
-import styles from '@/styles/components/iconlink.module.scss';
+import styles from '@/styles/components/IconLink.module.scss';
 
 export type IconLinkProps = HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;

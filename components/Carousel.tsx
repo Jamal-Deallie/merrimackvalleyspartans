@@ -1,24 +1,21 @@
-import Head from 'next/head';
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import {  useRef } from 'react';
 import { gsap } from 'gsap';
 import { horizontalLoop } from '@/src/helpers/horizontalLoop';
 import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 import CustomImage from '@/components/CustomImage';
-import styles from '@/styles/components/carousel.module.scss';
-import useArrayRef from '@/src/hooks/useArrayRef';
-const boxesArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-const colors = ['#f38630', '#6fb936', '#ccc', '#6fb936'];
+import styles from '@/styles/components/Carousel.module.scss';
+
+
 
 const Carousel = () => {
   const root = useRef<HTMLDivElement>(null);
   const box = useRef<HTMLDivElement>(null);
-  const loop = useRef<gsap.core.Timeline | null>(null);
+
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(self => {
       let targets = gsap.utils.toArray('#items');
       console.log(targets);
-      const boxes = gsap.utils.toArray(box.current);
       const config = {
         draggable: false,
         center: false,

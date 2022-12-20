@@ -1,6 +1,6 @@
 import IconLink from '@/components/IconLink';
 import CustomImage from '@/components/CustomImage';
-import styles from '@/styles/containers/quote.module.scss';
+import styles from '@/styles/containers/Quote.module.scss';
 
 type Props = {};
 

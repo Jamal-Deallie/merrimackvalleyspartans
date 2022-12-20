@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
-import styles from '@/styles/containers/cta.module.scss';
+import styles from '@/styles/containers/Cta.module.scss';
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
 import { yupResolver } from '@hookform/resolvers/yup';

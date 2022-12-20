@@ -1,8 +1,6 @@
 import { useRef } from 'react';
-import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 import BatchAnimation from '@/src/animations/BatchFade';
-import HeadingAnimation from '@/src/animations/HeadingCenter';
-import styles from '@/styles/containers/sponsors.module.scss';
+import styles from '@/styles/containers/Sponsors.module.scss';
 
 type Props = {};
 

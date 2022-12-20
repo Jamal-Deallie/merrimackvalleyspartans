@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import styles from '@/styles/components/form.module.scss';
+import styles from '@/styles/components/Form.module.scss';
 
 type SigninFormProps = {
   email?: string;

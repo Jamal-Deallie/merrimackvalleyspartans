@@ -4,7 +4,7 @@ import useLockedBody from '@/src/hooks/useLockedBody';
 import { gsap } from 'gsap';
 import Link from 'next/link';
 import SocialLinks from '@/components/SocialLinks';
-import styles from '@/styles/components/mobilemenu.module.scss';
+import styles from '@/styles/components/MobileMenu.module.scss';
 
 const MobileMenu = () => {
   const [openMenu, setOpenMenu] = useState(false);

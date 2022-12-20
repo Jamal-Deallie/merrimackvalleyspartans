@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordion from '@/components/Accordion';
-import styles from '@/styles/containers/faqs.module.scss';
-import CustomImage from '@/components/CustomImage';
+import styles from '@/styles/containers/Faqs.module.scss';
+
 
 type Props = {};
 

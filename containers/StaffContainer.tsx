@@ -1,6 +1,4 @@
-import { Children } from 'react';
-import styles from '@/styles/containers/staff.module.scss';
-import Image from 'next/image';
+import styles from '@/styles/containers/Staff.module.scss';
 import { staff, headcoaches } from '@/data/staff';
 
 type Props = {};

@@ -1,6 +1,6 @@
 import Form from '@/components/Form';
 import Image from 'next/image';
-import styles from '@/styles/containers/contact.module.scss';
+import styles from '@/styles/containers/Contact.module.scss';
 
 type Props = {};
 

@@ -1,5 +1,5 @@
 import IconLink from '@/components/IconLink';
-import styles from '@/styles/containers/mission.module.scss';
+import styles from '@/styles/containers/Mission.module.scss';
 
 const Mission = () => {
   return (

@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { useIsomorphicLayoutEffect } from '@/hooks/useIsomorphicLayout';
 import { gsap } from 'gsap';
-import styles from '@/styles/components/accordion.module.scss';
+import styles from '@/styles/components/Accordion.module.scss';
 
 type Props = {};
 

@@ -1,4 +1,4 @@
-import styles from '@/styles/components/sociallinks.module.scss';
+import styles from '@/styles/components/SocialLinks.module.scss';
 import { useCallback } from 'react';
 
 type SocialLinksProps = {

@@ -3,7 +3,7 @@ import CustomImage from '@/components/CustomImage';
 import NavLink from '@/components/NavLink';
 import { links } from '@/src/data/data';
 import MobileMenu from '@/components/MobileMenu';
-import styles from '@/styles/components/navbar.module.scss';
+import styles from '@/styles/components/Navbar.module.scss';
 
 export default function Navbar() {
   return (

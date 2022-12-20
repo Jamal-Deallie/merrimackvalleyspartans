@@ -2,7 +2,7 @@ import { PropsWithChildren, useState, useEffect, ReactNode } from 'react';
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import cn from 'classnames';
-import styles from '@/styles/components/navLink.module.scss';
+import styles from '@/styles/components/NavLink.module.scss';
 
 type NavLinkProps = LinkProps & {
   children: ReactNode;

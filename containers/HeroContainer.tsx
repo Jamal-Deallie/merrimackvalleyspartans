@@ -4,9 +4,10 @@ import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitText from 'gsap/dist/SplitText';
-import styles from '@/styles/containers/hero.module.scss';
+import styles from '@/styles/containers/Hero.module.scss';
 import SignUpNow from '@/src/svgs/signupnow';
 import ArrowRight from '@/src/svgs/arrowright';
+
 const Hero = () => {
   const root = useRef<HTMLDivElement>(null);
   const tl = useRef<gsap.core.Timeline | null>(null);
@@ -92,7 +93,7 @@ const Hero = () => {
                 <div className={styles.copy}>
                   <p id='copy'>
                     The Spartans are here to give the youth the best chance of
-                    growing on and off the field. We don't want to be average.
+                    growing on and off the field. We {"don't"} want to be average.
                     We want to be GREAT!
                   </p>
                 </div>

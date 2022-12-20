@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/containers/about.module.scss';
+import styles from '@/styles/containers/About.module.scss';
 import CustomImage from '@/components/CustomImage';
 type Props = {};
 

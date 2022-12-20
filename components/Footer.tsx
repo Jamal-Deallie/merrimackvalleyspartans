@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import Link from 'next/link';
 import SocialLinks from '@/components/SocialLinks';
-import styles from '@/styles/components/footer.module.scss';
+import styles from '@/styles/components/Footer.module.scss';
 
 export default function Footer() {
   const currYear = useMemo(() => {
