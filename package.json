@@ -7,7 +7,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "pre-commit": "npm run lint",
-    "test": "jest --watch",
+    "test": "jest",
     "test:ci": "jest --ci"
   },
   "dependencies": {

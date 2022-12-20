@@ -2,7 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm test
-npm test
-npm pre-commit
 npm run pre-commit
 npm run lint
