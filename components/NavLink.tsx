@@ -1,4 +1,5 @@
 import { useState, useEffect, ReactNode } from 'react';
+import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import cn from 'classnames';
@@ -13,7 +14,8 @@ type NavLinkProps = LinkProps & {
 export default function NavLink({ children, ...props }: NavLinkProps) {
   const { asPath, isReady } = useRouter();
   const [active, setActive] = useState<boolean>(false);
-  useEffect(() => {
+  
+  useIsomorphicLayoutEffect(() => {
     // Check if the router fields are updated client-side
     if (isReady) {
       // Dynamic route will be matched via props.as

@@ -28,7 +28,9 @@ export default function Navbar() {
             {links.map(({ id, label, path }) => {
               return (
                 <div key={id}>
-                  <NavLink href={path}>{label}</NavLink>
+                  <NavLink href={path} passHref>
+                    {label}
+                  </NavLink>
                 </div>
               );
             })}

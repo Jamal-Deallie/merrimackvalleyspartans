@@ -1,0 +1,264 @@
+@use '../utils/utils' as *;
+
+.container {
+  padding-top: 9.4rem;
+  width: 100%;
+
+  .inner {
+    padding-top: 9.4rem;
+    margin-inline: auto;
+    color: $tertiary-variant;
+
+    .heading {
+      @include pad-inline-xl;
+      h1 {
+        @include title;
+        color: $primary-variant;
+        text-transform: uppercase;
+      }
+      h1:nth-child(2) {
+        color: $tertiary-variant;
+      }
+      .desc {
+        margin-top: $space-m;
+        max-width: 55rem;
+      }
+      .arrow {
+        width: 50rem;
+        height: 50rem;
+        svg {
+          width: 50rem;
+          height: 50rem;
+          path {
+            fill: none;
+            stroke: $tertiary-variant;
+            stroke-width: 2px;
+            stroke-dasharray: 0 1500;
+            stroke-dasharray: 1500 1500;
+          }
+        }
+      }
+    }
+
+    .flex {
+      margin-top: $space-2xl-3xl;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: $space-2xl-3xl $space-m;
+      @include devices(tablet) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .flex > * {
+        width: 100%;
+      }
+
+      .content {
+        width: 100%;
+        h3 {
+          font-size: $space-xl-2xl;
+          line-height: 1.3;
+          margin-bottom: $space-m-l;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .wrap {
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+        overflow: hidden;
+
+        .img {
+          filter: grayscale(100%);
+          scale: 1.2;
+        }
+      }
+      .wrap:nth-of-type(1) {
+        aspect-ratio: 800/533;
+      }
+      .wrap:nth-of-type(2) {
+        aspect-ratio: 266/177;
+      }
+    }
+    .flex:nth-of-type(3) {
+      @include devices(tablet) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  .outer {
+    .line {
+      height: 1.2px;
+      transform-origin: left;
+      overflow: hidden;
+      background-color: $tertiary-variant;
+      margin: $space-s 0 $space-s 0;
+    }
+  }
+  .outer:nth-of-type(2) {
+    background-color: $primary-variant;
+    padding-bottom: 9.4rem;
+    h1,
+    p {
+      color: $secondary-variant;
+    }
+
+    .heading {
+      padding-top: 9.4rem;
+    }
+
+    .line {
+      background-color: $secondary-variant;
+    }
+  }
+}
+
+.table {
+  margin-top: 9.4rem;
+  .subheader {
+    margin: $space-xl 0;
+    max-width: 55rem;
+  }
+
+  .disclaimer {
+    margin: $space-s 0;
+  }
+  border-collapse: collapse;
+  width: 100%;
+  @include pad-inline-xl;
+  max-width: 141rem;
+  tr {
+    font-size: 1.9rem;
+  }
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  td {
+    padding: $space-xs;
+  }
+  tr:nth-child(even) {
+    background-color: $tertiary-variant;
+    color: $secondary-variant;
+  }
+
+  tr:hover {
+    background-color: $primary-variant;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $primary-variant;
+    color: $tertiary-variant;
+  }
+}
+
+.join {
+  margin-top: 9.4rem;
+  @include pad-inline-xl;
+
+  h1 {
+    @include title;
+    color: $primary-variant;
+    text-transform: uppercase;
+  }
+  h1:nth-child(2) {
+    color: $tertiary-variant;
+  }
+  .desc {
+    margin: $space-m 0;
+  }
+  padding-bottom: 9.4rem;
+  button {
+    background-color: transparent;
+    .btn {
+      display: flex;
+      gap: 1rem;
+      color: $tertiary-variant;
+      position: relative;
+      z-index: 3;
+      background: $primary-variant;
+      border-color: $tertiary-variant;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 4px;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      transition: all 0.2s linear;
+      font-size: 1.563rem;
+      width: 100%;
+      &:hover {
+        background: $tertiary-variant;
+        border-color: $secondary-variant;
+        color: $secondary-variant;
+        transition: all 0.2s linear;
+      }
+      .icon {
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  background-color: $primary-variant;
+  @include pad-inline-xl;
+  padding-top: 9.4rem;
+  padding-bottom: 9.4rem;
+  .inner {
+    max-width: 141rem;
+    height: 100%;
+    width: 100%;
+    .content {
+      padding: $space-m 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $space-m;
+
+      height: 100%;
+      width: 100%;
+
+      h3 {
+        font-size: $space-3xl;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        width: auto;
+        aspect-ratio: 250.42 / 110.36;
+
+        svg {
+          aspect-ratio: 250.42 / 110.36;
+          width: 80%;
+          height: auto;
+        }
+        path {
+          fill: none;
+          stroke: #ffffff;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 3px;
+          font-family: $heading-font;
+        }
+      }
+    }
+  }
+}

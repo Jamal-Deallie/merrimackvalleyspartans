@@ -6,7 +6,7 @@
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 1.563rem;
-  color: white;
+  color: $tertiary-variant !important;
   &:after {
     content: '';
     position: absolute;
@@ -58,7 +58,7 @@
 }
 
 .active {
-  color: $primary-variant;
+  color: $primary-variant !important;
   &:after {
     content: '';
     position: absolute;

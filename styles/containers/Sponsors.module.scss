@@ -11,6 +11,7 @@
     h1 {
       @include title;
       color: $primary-variant;
+      text-transform: uppercase;
       @include devices(tablet) {
         text-align: center;
       }

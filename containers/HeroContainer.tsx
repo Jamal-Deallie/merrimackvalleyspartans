@@ -20,7 +20,7 @@ const Hero = () => {
       let q = gsap.utils.selector(root);
       let targets = gsap.utils.toArray(q('span'));
 
-      console.log(targets);
+  
 
       tl.current
         .fromTo(

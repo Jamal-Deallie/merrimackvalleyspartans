@@ -3,7 +3,7 @@ import { staff, headcoaches } from '@/data/staff';
 
 type Props = {};
 
-const StaffContainer = (props: Props) => {
+const Staff = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.outer}>
@@ -76,4 +76,4 @@ const StaffContainer = (props: Props) => {
   );
 };
 
-export default StaffContainer;
+export default Staff;

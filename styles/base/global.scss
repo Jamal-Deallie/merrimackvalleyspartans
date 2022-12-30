@@ -236,6 +236,14 @@ a:active {
   overflow: hidden !important;
 }
 
+.split-parent {
+  overflow: hidden;
+}
+
+.split-child {
+  display: inline-block;
+}
+
 button {
   align-items: center;
   box-sizing: border-box;

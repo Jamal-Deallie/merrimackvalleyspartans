@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicLayout';
 
 type UseLockedBodyOutput = [boolean, (locked: boolean) => void];

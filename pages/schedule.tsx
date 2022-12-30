@@ -1,10 +1,14 @@
-import React from 'react';
-import Calendar from '@/containers/Calendar';
+import Calendar from '@/containers/CalendarContainer';
 
 type Props = {};
 
 const Schedule = (props: Props) => {
-  return <h1>Schedule</h1>
+  return (
+    <section>
+      <h1>Schedule</h1>
+      <Calendar />
+    </section>
+  );
 };
 
 export default Schedule;
